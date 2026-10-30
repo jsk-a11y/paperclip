@@ -2,9 +2,7 @@
 # Keep secrets and the canonical public URL in Coolify environment variables.
 services:
   paperclip:
-    build:
-      context: ..
-      dockerfile: Dockerfile
+    image: ghcr.io/paperclipai/paperclip:2026.1023.0
     pids_limit: 2048
     stop_grace_period: 90s
     restart: unless-stopped
